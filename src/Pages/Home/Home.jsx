@@ -1,7 +1,12 @@
+import Banner from '../Banner/Banner';
+
 const Home = () => {
   return (
-    <div className="mt-6">
-      <div className="navbar bg-base-200 lg:w-2/3 mx-auto">
+    <div className="mt-1">
+      <div>
+        <Banner></Banner>
+      </div>
+      <div className="navbar  bg-base-200 lg:w-2/3 mx-auto">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl font-bold">StyleMarket</a>
         </div>
