@@ -1,15 +1,48 @@
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import Banner from '../Banner/Banner';
+import useAxiosPublice from '../../Hooks/useAxiosPublice';
+import { useState } from 'react';
+import Select from 'react-select';
+import { useQuery } from '@tanstack/react-query';
+import ProductCard from './ProductCard';
 
+const options1 = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
+const options2 = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
+const options3 = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
 const Home = () => {
+  const axiosPublice = useAxiosPublice();
+  const [showsProduct, setShowsProduct] = useState([]);
+  const [selectedOption1, setSelectedOption1] = useState(null);
+  const [selectedOption2, setSelectedOption2] = useState(null);
+  const [selectedOption3, setSelectedOption3] = useState(null);
+  const { data: productData } = useQuery({
+    queryKey: ['products'],
+    queryFn: async () => {
+      const { data } = await axiosPublice.get('/product-data');
+      return data;
+    },
+  });
+  console.log(productData);
   return (
     <div className="mt-1 mb-[100px]">
       <div>
         <Banner></Banner>
       </div>
-      <div className="navbar   bg-[#D35400] text-white lg:w-2/3 mx-auto mt-2">
-        <div className="flex-1">
-          <div className=" flex items-center">
+      <div className="navbar  bg-[#D35400] lg:w-2/3 justify-center  mx-auto mt-2">
+        <div className="">
+          {/* <div className=" flex items-center">
             <input
               className="shadow appearance-none  border-2 rounded-lg w-full  md:w-[300px] lg:w-[380px]  input input-bordered text-gray-700 leading-tight focus:outline-none rounded-r-none"
               id="search"
@@ -23,59 +56,36 @@ const Home = () => {
             >
               Search
             </button>
-          </div>
+          </div> */}
         </div>
-        <div className=" navbar-end  lg:gap-4">
-          <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="lg:btn md:btn p-2  btn-ghost rounded-bt "
-            >
-              <span className="flex items-center">
-                {' '}
-                Category{' '}
-                <RiArrowDropDownLine className=" text-xl lg:text-4xl" />
-              </span>{' '}
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu dropdown-content bg-[#D35400] rounded-box z-[1] mt-4 w-52 p-2 shadow"
-            >
-              <li>
-                <a>Brand Name</a>
-              </li>
-              <li>
-                <a>Category Name</a>
-              </li>
-              <li>
-                <a>Price Range</a>
-              </li>
-            </ul>
-          </div>
-          <div className="dropdown dropdown-end ">
-            <div
-              tabIndex={0}
-              role="button"
-              className=" lg:btn md:btn p-2 btn-ghost rounded-btn "
-            >
-              <span className="flex items-center ">
-                Sorting <RiArrowDropDownLine className=" text-xl lg:text-4xl" />
-              </span>
-            </div>
-            <ul
-              tabIndex={0}
-              className="menu dropdown-content bg-[#D35400] rounded-box z-[1] mt-4 w-52 p-2 shadow"
-            >
-              <li>
-                <a>Price</a>
-              </li>
-              <li>
-                <a>Date Added</a>
-              </li>
-            </ul>
-          </div>
+        <div className="gap-3 lg:gap-4">
+          <Select
+            className="bg-[#D35400]"
+            placeholder="Brand"
+            defaultValue={selectedOption1}
+            onChange={setSelectedOption1}
+            options={options1}
+          />
+          <Select
+            className="bg-[#D35400]"
+            placeholder="Category"
+            defaultValue={selectedOption2}
+            onChange={setSelectedOption2}
+            options={options2}
+          />
+          <Select
+            className="bg-[#D35400]"
+            placeholder="Price"
+            defaultValue={selectedOption3}
+            onChange={setSelectedOption3}
+            options={options3}
+          />
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-6 lg:grid-cols-3 gap-6">
+        {productData.map(product => (
+          <ProductCard key={product._id} product={product}></ProductCard>
+        ))}
       </div>
     </div>
   );

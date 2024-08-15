@@ -1,9 +1,11 @@
 import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
 import useAuth from '../../Hooks/useAuth';
+import useAxiosPublice from '../../Hooks/useAxiosPublice';
 
 const Login = () => {
   const { handileClicksignWithGoogle, handileClickLogin } = useAuth();
+  const axiosPublice = useAxiosPublice();
   const {
     register,
     handleSubmit,
@@ -22,6 +24,18 @@ const Login = () => {
   const handileClickGoogle = () => {
     handileClicksignWithGoogle().then(res => {
       console.log(res.user);
+      const userInfo = {
+        fullName: res?.user?.displayName,
+        image: res?.user?.photoURL,
+        email: res?.user?.email,
+        role: 'user',
+      };
+
+      if (res.user) {
+        axiosPublice.post('/google-sign', userInfo).then(res => {
+          console.log(res.data);
+        });
+      }
     });
   };
   return (

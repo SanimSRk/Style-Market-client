@@ -2,8 +2,10 @@ import axios from 'axios';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../Hooks/useAuth';
 import { FcGoogle } from 'react-icons/fc';
+import useAxiosPublice from '../../Hooks/useAxiosPublice';
 
 const SignUp = () => {
+  const axiosPublice = useAxiosPublice();
   const {
     handileClickSignUp,
     handileClickUpdateProfile,
@@ -31,12 +33,21 @@ const SignUp = () => {
       .then(res => {
         console.log(res.data.data.display_url);
         const image = res?.data?.data?.display_url;
+        const userInfo = {
+          fullName,
+          email,
+          image,
+          role: 'user',
+        };
         handileClickSignUp(email, password)
           .then(res => {
             console.log(res.user);
             if (res.user) {
               handileClickUpdateProfile(fullName, image).then(res => {
                 console.log(res.user);
+                axiosPublice.post('sign-user', userInfo).then(res => {
+                  console.log(res.data);
+                });
               });
             }
           })
@@ -48,6 +59,17 @@ const SignUp = () => {
   const handileClickGoogle = () => {
     handileClicksignWithGoogle().then(res => {
       console.log(res.user);
+      const userInfo = {
+        fullName: res?.user?.displayName,
+        image: res?.user?.photoURL,
+        email: res?.user?.email,
+        role: 'user',
+      };
+      if (res.user) {
+        axiosPublice.post('/google-sign', userInfo).then(res => {
+          console.log(res.data);
+        });
+      }
     });
   };
   return (

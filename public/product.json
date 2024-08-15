@@ -1,0 +1,362 @@
+[
+  {
+    "ProductName": "Wireless Headphones",
+    "ProductImage": "https://i.postimg.cc/k5jSvpcv/Beats-Studio.jpg",
+    "Description": "High-quality wireless headphones with noise-cancellation.",
+    "Price": 99.99,
+    "Category": "Electronics",
+    "Ratings": 4.7,
+    "ProductDate": "2024-08-14T12:34:56"
+  },
+  {
+    "ProductName": "Smartphone",
+    "ProductImage": "https://i.postimg.cc/7LsM6d82/smtphone.jpg",
+    "Description": "Latest model with advanced features and high-resolution camera.",
+    "Price": 699.99,
+    "Category": "Electronics",
+    "Ratings": 4.8,
+    "ProductDate": "2024-08-13T11:22:33"
+  },
+  {
+    "ProductName": "Running Shoes",
+    "ProductImage": "https://i.postimg.cc/Rhfcg037/running-shoes-image-mob.webp",
+    "Description": "Comfortable and durable running shoes for all terrains.",
+    "Price": 59.99,
+    "Category": "Footwear",
+    "Ratings": 4.5,
+    "ProductDate": "2024-08-12T09:10:11"
+  },
+  {
+    "ProductName": "Laptop",
+    "ProductImage": "https://i.postimg.cc/MH8cKmTB/lenovo-ideapad.avif",
+    "Description": "Lightweight laptop with powerful performance and long battery life.",
+    "Price": 1299.99,
+    "Category": "Electronics",
+    "Ratings": 4.9,
+    "ProductDate": "2024-08-11T14:23:45"
+  },
+  {
+    "ProductName": "Coffee Maker",
+    "ProductImage": "https://i.postimg.cc/ryS0Z3nN/818gyfj-Ym-ZL.jpg",
+    "Description": "Automatic coffee maker with programmable settings.",
+    "Price": 89.99,
+    "Category": "Home Appliances",
+    "Ratings": 4.6,
+    "ProductDate": "2024-08-10T08:30:00"
+  },
+  {
+    "ProductName": "Fitness Tracker",
+    "ProductImage": "https://i.postimg.cc/hGzhL5Qx/d56eeaa21522d8.webp",
+    "Description": "Track your daily activity, heart rate, and sleep patterns.",
+    "Price": 49.99,
+    "Category": "Health & Fitness",
+    "Ratings": 4.4,
+    "ProductDate": "2024-08-09T07:20:55"
+  },
+  {
+    "ProductName": "4K TV",
+    "ProductImage": "https://i.postimg.cc/05dj0mjt/4ktv.jpg",
+    "Description": "Ultra HD 4K TV with vibrant colors and smart features.",
+    "Price": 499.99,
+    "Category": "Electronics",
+    "Ratings": 4.7,
+    "ProductDate": "2024-08-08T18:45:32"
+  },
+  {
+    "ProductName": "Blender",
+    "ProductImage": "https://i.postimg.cc/Pqwrpv0Q/Photoroom.webp",
+    "Description": "Powerful blender for smoothies, soups, and more.",
+    "Price": 39.99,
+    "Category": "Kitchen Appliances",
+    "Ratings": 4.3,
+    "ProductDate": "2024-08-07T16:50:21"
+  },
+  {
+    "ProductName": "Electric Toothbrush",
+    "ProductImage": "https://i.postimg.cc/Y9x7Y6RY/512-V1-GCv-z-L-SL1000.jpg",
+    "Description": "Electric toothbrush with multiple brushing modes.",
+    "Price": 29.99,
+    "Category": "Personal Care",
+    "Ratings": 4.5,
+    "ProductDate": "2024-08-06T15:22:14"
+  },
+  {
+    "ProductName": "Gaming Console",
+    "ProductImage": "https://i.postimg.cc/gjSPBGf0/ASUS-ROG-Ally.jpg",
+    "Description": "Next-gen gaming console with immersive graphics.",
+    "Price": 399.99,
+    "Category": "Electronics",
+    "Ratings": 4.9,
+    "ProductDate": "2024-08-05T14:15:00"
+  },
+  {
+    "ProductName": "Yoga Mat",
+    "ProductImage": "https://i.postimg.cc/ZRXQ9Ctp/yoga.jpg",
+    "Description": "Non-slip yoga mat with extra cushioning for comfort.",
+    "Price": 24.99,
+    "Category": "Health & Fitness",
+    "Ratings": 4.6,
+    "ProductDate": "2024-08-04T12:45:34"
+  },
+  {
+    "ProductName": "Smartwatch",
+    "ProductImage": "https://i.postimg.cc/sg3NGk86/dda6bc1f-d282.webp",
+    "Description": "Smartwatch with fitness tracking and smartphone connectivity.",
+    "Price": 199.99,
+    "Category": "Electronics",
+    "Ratings": 4.7,
+    "ProductDate": "2024-08-03T10:11:22"
+  },
+  {
+    "ProductName": "Bluetooth Speaker",
+    "ProductImage": "https://i.postimg.cc/ZqRsVrJ6/tronsmart-t7.jpg",
+    "Description": "Portable Bluetooth speaker with powerful sound.",
+    "Price": 79.99,
+    "Category": "Electronics",
+    "Ratings": 4.8,
+    "ProductDate": "2024-08-02T09:14:45"
+  },
+  {
+    "ProductName": "E-book Reader",
+    "ProductImage": "https://i.postimg.cc/SQ8TTQb1/2661-Black-1409.jpg",
+    "Description": "E-book reader with adjustable backlight and long battery life.",
+    "Price": 129.99,
+    "Category": "Electronics",
+    "Ratings": 4.7,
+    "ProductDate": "2024-08-01T13:30:00"
+  },
+  {
+    "ProductName": "Electric Kettle",
+    "ProductImage": "https://i.postimg.cc/VNd4jmFR/bajaj-bj-002b-electric.jpg",
+    "Description": "Fast-boiling electric kettle with temperature control.",
+    "Price": 34.99,
+    "Category": "Kitchen Appliances",
+    "Ratings": 4.4,
+    "ProductDate": "2024-07-31T11:11:11"
+  },
+  {
+    "ProductName": "Smart Thermostat",
+    "ProductImage": "hhttps://i.postimg.cc/BZxp5h2d/smart-thermosta.jpg",
+    "Description": "Smart thermostat with remote control and energy-saving features.",
+    "Price": 199.99,
+    "Category": "Home Appliances",
+    "Ratings": 4.6,
+    "ProductDate": "2024-07-30T15:23:42"
+  },
+  {
+    "ProductName": "Vacuum Cleaner",
+    "ProductImage": "https://i.postimg.cc/sg04fbRZ/Tolsen-79608.jpg",
+    "Description": "High-suction vacuum cleaner with HEPA filter.",
+    "Price": 149.99,
+    "Category": "Home Appliances",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-29T12:34:56"
+  },
+  {
+    "ProductName": "Instant Pot",
+    "ProductImage": "https://i.postimg.cc/jdxHHRx7/instant-pot-pro-multi.jpg",
+    "Description": "Multi-functional Instant Pot for quick and easy meals.",
+    "Price": 89.99,
+    "Category": "Kitchen Appliances",
+    "Ratings": 4.8,
+    "ProductDate": "2024-07-28T10:10:10"
+  },
+  {
+    "ProductName": "Camping Tent",
+    "ProductImage": "https://i.postimg.cc/rF2W8WYc/waterproof.jpg",
+    "Description": "Waterproof camping tent for 4 people.",
+    "Price": 99.99,
+    "Category": "Outdoor Gear",
+    "Ratings": 4.5,
+    "ProductDate": "2024-07-27T08:00:00"
+  },
+  {
+    "ProductName": "Air Purifier",
+    "ProductImage": "https://i.postimg.cc/TYcyfsDq/Philips-AC0850.jpg",
+    "Description": "Air purifier with HEPA filter for clean air.",
+    "Price": 129.99,
+    "Category": "Home Appliances",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-26T07:25:30"
+  },
+  {
+    "ProductName": "Digital Camera",
+    "ProductImage": "https://i.postimg.cc/MKtGhjC9/6641cd55222e6d1c46369c.webp",
+    "Description": "High-resolution digital camera with 4K video recording.",
+    "Price": 499.99,
+    "Category": "Electronics",
+    "Ratings": 4.8,
+    "ProductDate": "2024-07-25T14:12:09"
+  },
+  {
+    "ProductName": "Electric Grill",
+    "ProductImage": "https://i.postimg.cc/j5zxvW6Q/Electric-BBQ-Grill-Machine-2000-W.jpg",
+    "Description": "Compact electric grill for indoor cooking.",
+    "Price": 59.99,
+    "Category": "Kitchen Appliances",
+    "Ratings": 4.4,
+    "ProductDate": "2024-07-24T11:45:00"
+  },
+  {
+    "ProductName": "Hiking Backpack",
+    "ProductImage": "https://i.postimg.cc/zG6qrw0F/635a497152ef7464887.jpg",
+    "Description": "Durable hiking backpack with multiple compartments.",
+    "Price": 74.99,
+    "Category": "Outdoor Gear",
+    "Ratings": 4.6,
+    "ProductDate": "2024-07-23T09:34:12"
+  },
+  {
+    "ProductName": "Portable Charger",
+    "ProductImage": "https://i.postimg.cc/RFQmKk9g/anker-powercore-10050.jpg",
+    "Description": "High-capacity portable charger for all your devices.",
+    "Price": 29.99,
+    "Category": "Electronics",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-22T15:21:34"
+  },
+  {
+    "ProductName": "LED Desk Lamp",
+    "ProductImage": "https://i.postimg.cc/MTx269RV/636ff60d6edfaa3cbf163d1c.jpg",
+    "Description": "Adjustable LED desk lamp with touch controls.",
+    "Price": 39.99,
+    "Category": "Home Decor",
+    "Ratings": 4.5,
+    "ProductDate": "2024-07-21T16:11:55"
+  },
+  {
+    "ProductName": "Noise-Canceling Earbuds",
+    "ProductImage": "https://i.postimg.cc/k47z3B3y/20230812.jpg",
+    "Description": "Compact noise-canceling earbuds with crystal clear sound.",
+    "Price": 79.99,
+    "Category": "Electronics",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-20T17:03:21"
+  },
+  {
+    "ProductName": "Air Fryer",
+    "ProductImage": "https://i.postimg.cc/KjHHMfK9/L482i.jpg",
+    "Description": "Healthy cooking with this easy-to-use air fryer.",
+    "Price": 99.99,
+    "Category": "Kitchen Appliances",
+    "Ratings": 4.8,
+    "ProductDate": "2024-07-19T13:14:16"
+  },
+  {
+    "ProductName": "Smart Light Bulbs",
+    "ProductImage": "https://i.postimg.cc/LsDvPDwz/61-DD9-Oxp-X8.jpg",
+    "Description": "Control your lighting with these smart light bulbs.",
+    "Price": 49.99,
+    "Category": "Home Decor",
+    "Ratings": 4.6,
+    "ProductDate": "2024-07-18T10:09:08"
+  },
+  {
+    "ProductName": "Bicycle",
+    "ProductImage": "https://i.postimg.cc/5yYmZV03/714j-Gi-Gg6-SL.jpg",
+    "Description": "Mountain bike with 21-speed gears for outdoor adventures.",
+    "Price": 299.99,
+    "Category": "Outdoor Gear",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-17T08:00:00"
+  },
+  {
+    "ProductName": "Electric Scooter",
+    "ProductImage": "https://i.postimg.cc/HkcVXkN3/janobike.jpg",
+    "Description": "Eco-friendly electric scooter for urban commuting.",
+    "Price": 349.99,
+    "Category": "Outdoor Gear",
+    "Ratings": 4.6,
+    "ProductDate": "2024-07-16T12:30:45"
+  },
+  {
+    "ProductName": "Pressure Cooker",
+    "ProductImage": "https://i.postimg.cc/MTDTqMcZ/Prestige-Aluminium.jpg",
+    "Description": "Stainless steel pressure cooker for quick meals.",
+    "Price": 59.99,
+    "Category": "Kitchen Appliances",
+    "Ratings": 4.5,
+    "ProductDate": "2024-07-15T14:10:20"
+  },
+  {
+    "ProductName": "Smart Door Lock",
+    "ProductImage": "https://i.postimg.cc/PqnrDzYr/smartlife-m1.jpg",
+    "Description": "Secure your home with this advanced smart door lock.",
+    "Price": 179.99,
+    "Category": "Home Security",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-14T09:50:10"
+  },
+  {
+    "ProductName": "Wireless Charger",
+    "ProductImage": "https://i.postimg.cc/Yq4pyyxC/anker-powerwave.jpg",
+    "Description": "Fast wireless charger for your mobile devices.",
+    "Price": 24.99,
+    "Category": "Electronics",
+    "Ratings": 4.5,
+    "ProductDate": "2024-07-13T08:15:05"
+  },
+  {
+    "ProductName": "Robot Vacuum",
+    "ProductImage": "https://i.postimg.cc/Wbr41Hqf/679135d849ef7fdaae.jpg",
+    "Description": "Automatic robot vacuum cleaner for hassle-free cleaning.",
+    "Price": 249.99,
+    "Category": "Home Appliances",
+    "Ratings": 4.8,
+    "ProductDate": "2024-07-12T16:14:35"
+  },
+  {
+    "ProductName": "Wireless Earbud",
+    "ProductImage": "https://i.postimg.cc/rpD3qvKD/air-s-01.webp",
+    "Description": "Wireless earbuds with superior sound quality.",
+    "Price": 89.99,
+    "Category": "Electronics",
+    "Ratings": 4.6,
+    "ProductDate": "2024-07-11T14:23:54"
+  },
+  {
+    "ProductName": "Electric Bike",
+    "ProductImage": "https://i.postimg.cc/J0xPNqsw/64f9d0f0b79db57.webp",
+    "Description": "Electric bike for effortless commuting and exercise.",
+    "Price": 899.99,
+    "Category": "Outdoor Gear",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-10T11:55:40"
+  },
+  {
+    "ProductName": "Waterproof Jacket",
+    "ProductImage": "https://i.postimg.cc/G3x7ncqM/bl-354531-a.jpg",
+    "Description": "Stay dry with this stylish waterproof jacket.",
+    "Price": 99.99,
+    "Category": "Outdoor Gear",
+    "Ratings": 4.6,
+    "ProductDate": "2024-07-09T09:33:22"
+  },
+  {
+    "ProductName": "Wireless Mouse",
+    "ProductImage": "https://i.postimg.cc/sgvwW5y8/61-Owbbvd-Jq-L.jpg",
+    "Description": "Ergonomic wireless mouse with long battery life.",
+    "Price": 24.99,
+    "Category": "Electronics",
+    "Ratings": 4.5,
+    "ProductDate": "2024-07-08T13:44:11"
+  },
+  {
+    "ProductName": "Portable Air Conditioner",
+    "ProductImage": "https://i.postimg.cc/QdwSJVdM/power-portable.webp",
+    "Description": "Portable air conditioner with remote control.",
+    "Price": 349.99,
+    "Category": "Home Appliances",
+    "Ratings": 4.7,
+    "ProductDate": "2024-07-07T12:22:33"
+  },
+  {
+    "ProductName": "Massage Gun",
+    "ProductImage": "https://i.postimg.cc/qRdLWYnV/61g-Oc-Gz7ps-L-AC.jpg",
+    "Description": "Deep tissue massage gun for muscle relief.",
+    "Price": 119.99,
+    "Category": "Health & Fitness",
+    "Ratings": 4.6,
+    "ProductDate": "2024-07-06T14:55:20"
+  }
+]
