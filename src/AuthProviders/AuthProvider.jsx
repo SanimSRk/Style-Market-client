@@ -1,7 +1,9 @@
 import {
   createUserWithEmailAndPassword,
+  GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut,
   updateProfile,
 } from 'firebase/auth';
@@ -10,6 +12,7 @@ import auth from '../Firebase/firebase.init';
 
 export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
+  const provider = new GoogleAuthProvider();
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);
   const handileClickSignUp = (email, password) => {
@@ -30,7 +33,10 @@ const AuthProvider = ({ children }) => {
     setUser(null);
     return signOut(auth);
   };
-
+  const handileClicksignWithGoogle = () => {
+    setLoading(false);
+    return signInWithPopup(auth, provider);
+  };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, currentUser => {
       if (currentUser) {
@@ -49,6 +55,7 @@ const AuthProvider = ({ children }) => {
     handileClickUpdateProfile,
     loading,
     user,
+    handileClicksignWithGoogle,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

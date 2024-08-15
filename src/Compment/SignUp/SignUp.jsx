@@ -1,7 +1,14 @@
 import axios from 'axios';
 import { useForm } from 'react-hook-form';
+import useAuth from '../../Hooks/useAuth';
+import { FcGoogle } from 'react-icons/fc';
 
 const SignUp = () => {
+  const {
+    handileClickSignUp,
+    handileClickUpdateProfile,
+    handileClicksignWithGoogle,
+  } = useAuth();
   const {
     register,
     handleSubmit,
@@ -23,8 +30,25 @@ const SignUp = () => {
       )
       .then(res => {
         console.log(res.data.data.display_url);
+        const image = res?.data?.data?.display_url;
+        handileClickSignUp(email, password)
+          .then(res => {
+            console.log(res.user);
+            if (res.user) {
+              handileClickUpdateProfile(fullName, image).then(res => {
+                console.log(res.user);
+              });
+            }
+          })
+          .catch(error => {
+            console.log(error);
+          });
       });
-    // const userinfo = {};
+  };
+  const handileClickGoogle = () => {
+    handileClicksignWithGoogle().then(res => {
+      console.log(res.user);
+    });
   };
   return (
     <div>
@@ -106,16 +130,11 @@ const SignUp = () => {
               </button>
             </div>
           </form>
-          {/* <div className="mt-4 text-center">
-            <p className="text-gray-600 text-sm">
-              Already have an account?{' '}
-              <Link to={'/login'}>
-                <a className="text-green-500 font-bold hover:text-green-800">
-                  Login
-                </a>
-              </Link>
-            </p>
-          </div> */}
+          <div>
+            <button onClick={handileClickGoogle} className="btn w-full">
+              <FcGoogle className="text-3xl" /> Sign wiht google
+            </button>
+          </div>
         </div>
       </div>
     </div>

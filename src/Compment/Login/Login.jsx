@@ -1,6 +1,9 @@
 import { useForm } from 'react-hook-form';
+import { FcGoogle } from 'react-icons/fc';
+import useAuth from '../../Hooks/useAuth';
 
 const Login = () => {
+  const { handileClicksignWithGoogle, handileClickLogin } = useAuth();
   const {
     register,
     handleSubmit,
@@ -10,6 +13,16 @@ const Login = () => {
 
   const onSubmit = data => {
     console.log(data);
+    const { email, password } = data;
+    handileClickLogin(email, password).then(res => {
+      console.log(res.user);
+    });
+  };
+
+  const handileClickGoogle = () => {
+    handileClicksignWithGoogle().then(res => {
+      console.log(res.user);
+    });
   };
   return (
     <div>
@@ -60,16 +73,11 @@ const Login = () => {
               </button>
             </div>
           </form>
-          {/* <div className="mt-4 text-center">
-            <p className="text-gray-600 text-sm">
-              Already have an account?{' '}
-              <Link to={'/login'}>
-                <a className="text-green-500 font-bold hover:text-green-800">
-                  Login
-                </a>
-              </Link>
-            </p>
-          </div> */}
+          <div>
+            <button onClick={handileClickGoogle} className="btn w-full">
+              <FcGoogle className="text-3xl" /> Sign wiht google
+            </button>
+          </div>
         </div>
       </div>
     </div>
