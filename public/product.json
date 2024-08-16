@@ -1,6 +1,7 @@
 [
   {
     "ProductName": "Wireless Headphones",
+    "BrandName": "SoundTech",
     "ProductImage": "https://i.postimg.cc/k5jSvpcv/Beats-Studio.jpg",
     "Description": "High-quality wireless headphones with noise-cancellation.",
     "Price": 99.99,
@@ -10,6 +11,7 @@
   },
   {
     "ProductName": "Smartphone",
+    "BrandName": "TechWorld",
     "ProductImage": "https://i.postimg.cc/7LsM6d82/smtphone.jpg",
     "Description": "Latest model with advanced features and high-resolution camera.",
     "Price": 699.99,
@@ -19,6 +21,7 @@
   },
   {
     "ProductName": "Running Shoes",
+    "BrandName": "FitWear",
     "ProductImage": "https://i.postimg.cc/Rhfcg037/running-shoes-image-mob.webp",
     "Description": "Comfortable and durable running shoes for all terrains.",
     "Price": 59.99,
@@ -28,6 +31,7 @@
   },
   {
     "ProductName": "Laptop",
+    "BrandName": "CompuPro",
     "ProductImage": "https://i.postimg.cc/MH8cKmTB/lenovo-ideapad.avif",
     "Description": "Lightweight laptop with powerful performance and long battery life.",
     "Price": 1299.99,
@@ -37,6 +41,7 @@
   },
   {
     "ProductName": "Coffee Maker",
+    "BrandName": "HomeBrew",
     "ProductImage": "https://i.postimg.cc/ryS0Z3nN/818gyfj-Ym-ZL.jpg",
     "Description": "Automatic coffee maker with programmable settings.",
     "Price": 89.99,
@@ -46,6 +51,7 @@
   },
   {
     "ProductName": "Fitness Tracker",
+    "BrandName": "HealthGear",
     "ProductImage": "https://i.postimg.cc/hGzhL5Qx/d56eeaa21522d8.webp",
     "Description": "Track your daily activity, heart rate, and sleep patterns.",
     "Price": 49.99,
@@ -55,6 +61,7 @@
   },
   {
     "ProductName": "4K TV",
+    "BrandName": "VisionPro",
     "ProductImage": "https://i.postimg.cc/05dj0mjt/4ktv.jpg",
     "Description": "Ultra HD 4K TV with vibrant colors and smart features.",
     "Price": 499.99,
@@ -64,6 +71,7 @@
   },
   {
     "ProductName": "Blender",
+    "BrandName": "KitchenMaster",
     "ProductImage": "https://i.postimg.cc/Pqwrpv0Q/Photoroom.webp",
     "Description": "Powerful blender for smoothies, soups, and more.",
     "Price": 39.99,
@@ -73,6 +81,7 @@
   },
   {
     "ProductName": "Electric Toothbrush",
+    "BrandName": "SmileTech",
     "ProductImage": "https://i.postimg.cc/Y9x7Y6RY/512-V1-GCv-z-L-SL1000.jpg",
     "Description": "Electric toothbrush with multiple brushing modes.",
     "Price": 29.99,
@@ -82,6 +91,7 @@
   },
   {
     "ProductName": "Gaming Console",
+    "BrandName": "GameX",
     "ProductImage": "https://i.postimg.cc/gjSPBGf0/ASUS-ROG-Ally.jpg",
     "Description": "Next-gen gaming console with immersive graphics.",
     "Price": 399.99,
@@ -91,6 +101,7 @@
   },
   {
     "ProductName": "Yoga Mat",
+    "BrandName": "YogaFlex",
     "ProductImage": "https://i.postimg.cc/ZRXQ9Ctp/yoga.jpg",
     "Description": "Non-slip yoga mat with extra cushioning for comfort.",
     "Price": 24.99,
@@ -100,6 +111,7 @@
   },
   {
     "ProductName": "Smartwatch",
+    "BrandName": "TimeTech",
     "ProductImage": "https://i.postimg.cc/sg3NGk86/dda6bc1f-d282.webp",
     "Description": "Smartwatch with fitness tracking and smartphone connectivity.",
     "Price": 199.99,
@@ -109,6 +121,7 @@
   },
   {
     "ProductName": "Bluetooth Speaker",
+    "BrandName": "SoundWave",
     "ProductImage": "https://i.postimg.cc/ZqRsVrJ6/tronsmart-t7.jpg",
     "Description": "Portable Bluetooth speaker with powerful sound.",
     "Price": 79.99,
@@ -118,6 +131,7 @@
   },
   {
     "ProductName": "E-book Reader",
+    "BrandName": "ReadSmart",
     "ProductImage": "https://i.postimg.cc/SQ8TTQb1/2661-Black-1409.jpg",
     "Description": "E-book reader with adjustable backlight and long battery life.",
     "Price": 129.99,
@@ -127,6 +141,7 @@
   },
   {
     "ProductName": "Electric Kettle",
+    "BrandName": "BoilMaster",
     "ProductImage": "https://i.postimg.cc/VNd4jmFR/bajaj-bj-002b-electric.jpg",
     "Description": "Fast-boiling electric kettle with temperature control.",
     "Price": 34.99,
@@ -136,6 +151,7 @@
   },
   {
     "ProductName": "Smart Thermostat",
+    "BrandName": "EcoHome",
     "ProductImage": "hhttps://i.postimg.cc/BZxp5h2d/smart-thermosta.jpg",
     "Description": "Smart thermostat with remote control and energy-saving features.",
     "Price": 199.99,
@@ -145,6 +161,7 @@
   },
   {
     "ProductName": "Vacuum Cleaner",
+    "BrandName": "CleanMaster",
     "ProductImage": "https://i.postimg.cc/sg04fbRZ/Tolsen-79608.jpg",
     "Description": "High-suction vacuum cleaner with HEPA filter.",
     "Price": 149.99,
@@ -154,6 +171,7 @@
   },
   {
     "ProductName": "Instant Pot",
+    "BrandName": "CookPro",
     "ProductImage": "https://i.postimg.cc/jdxHHRx7/instant-pot-pro-multi.jpg",
     "Description": "Multi-functional Instant Pot for quick and easy meals.",
     "Price": 89.99,
@@ -163,6 +181,7 @@
   },
   {
     "ProductName": "Camping Tent",
+    "BrandName": "CampSafe",
     "ProductImage": "https://i.postimg.cc/rF2W8WYc/waterproof.jpg",
     "Description": "Waterproof camping tent for 4 people.",
     "Price": 99.99,
@@ -172,6 +191,7 @@
   },
   {
     "ProductName": "Air Purifier",
+    "BrandName": "AirGuard",
     "ProductImage": "https://i.postimg.cc/TYcyfsDq/Philips-AC0850.jpg",
     "Description": "Air purifier with HEPA filter for clean air.",
     "Price": 129.99,
@@ -181,6 +201,7 @@
   },
   {
     "ProductName": "Digital Camera",
+    "BrandName": "Canon",
     "ProductImage": "https://i.postimg.cc/MKtGhjC9/6641cd55222e6d1c46369c.webp",
     "Description": "High-resolution digital camera with 4K video recording.",
     "Price": 499.99,
@@ -190,6 +211,7 @@
   },
   {
     "ProductName": "Electric Grill",
+    "BrandName": "George Foreman",
     "ProductImage": "https://i.postimg.cc/j5zxvW6Q/Electric-BBQ-Grill-Machine-2000-W.jpg",
     "Description": "Compact electric grill for indoor cooking.",
     "Price": 59.99,
@@ -199,6 +221,7 @@
   },
   {
     "ProductName": "Hiking Backpack",
+    "BrandName": "Osprey",
     "ProductImage": "https://i.postimg.cc/zG6qrw0F/635a497152ef7464887.jpg",
     "Description": "Durable hiking backpack with multiple compartments.",
     "Price": 74.99,
@@ -208,6 +231,7 @@
   },
   {
     "ProductName": "Portable Charger",
+    "BrandName": "Anker",
     "ProductImage": "https://i.postimg.cc/RFQmKk9g/anker-powercore-10050.jpg",
     "Description": "High-capacity portable charger for all your devices.",
     "Price": 29.99,
@@ -217,6 +241,7 @@
   },
   {
     "ProductName": "LED Desk Lamp",
+    "BrandName": "Philips",
     "ProductImage": "https://i.postimg.cc/MTx269RV/636ff60d6edfaa3cbf163d1c.jpg",
     "Description": "Adjustable LED desk lamp with touch controls.",
     "Price": 39.99,
@@ -226,6 +251,7 @@
   },
   {
     "ProductName": "Noise-Canceling Earbuds",
+    "BrandName": "Sony",
     "ProductImage": "https://i.postimg.cc/k47z3B3y/20230812.jpg",
     "Description": "Compact noise-canceling earbuds with crystal clear sound.",
     "Price": 79.99,
@@ -235,6 +261,7 @@
   },
   {
     "ProductName": "Air Fryer",
+    "BrandName": "Ninja",
     "ProductImage": "https://i.postimg.cc/KjHHMfK9/L482i.jpg",
     "Description": "Healthy cooking with this easy-to-use air fryer.",
     "Price": 99.99,
@@ -244,6 +271,7 @@
   },
   {
     "ProductName": "Smart Light Bulbs",
+    "BrandName": "Philips Hue",
     "ProductImage": "https://i.postimg.cc/LsDvPDwz/61-DD9-Oxp-X8.jpg",
     "Description": "Control your lighting with these smart light bulbs.",
     "Price": 49.99,
@@ -253,6 +281,7 @@
   },
   {
     "ProductName": "Bicycle",
+    "BrandName": "Giant",
     "ProductImage": "https://i.postimg.cc/5yYmZV03/714j-Gi-Gg6-SL.jpg",
     "Description": "Mountain bike with 21-speed gears for outdoor adventures.",
     "Price": 299.99,
@@ -262,6 +291,7 @@
   },
   {
     "ProductName": "Electric Scooter",
+    "BrandName": "Segway",
     "ProductImage": "https://i.postimg.cc/HkcVXkN3/janobike.jpg",
     "Description": "Eco-friendly electric scooter for urban commuting.",
     "Price": 349.99,
@@ -271,6 +301,7 @@
   },
   {
     "ProductName": "Pressure Cooker",
+    "BrandName": "Instant Pot",
     "ProductImage": "https://i.postimg.cc/MTDTqMcZ/Prestige-Aluminium.jpg",
     "Description": "Stainless steel pressure cooker for quick meals.",
     "Price": 59.99,
@@ -280,6 +311,7 @@
   },
   {
     "ProductName": "Smart Door Lock",
+    "BrandName": "August",
     "ProductImage": "https://i.postimg.cc/PqnrDzYr/smartlife-m1.jpg",
     "Description": "Secure your home with this advanced smart door lock.",
     "Price": 179.99,
@@ -289,6 +321,7 @@
   },
   {
     "ProductName": "Wireless Charger",
+    "BrandName": "Belkin",
     "ProductImage": "https://i.postimg.cc/Yq4pyyxC/anker-powerwave.jpg",
     "Description": "Fast wireless charger for your mobile devices.",
     "Price": 24.99,
@@ -298,6 +331,7 @@
   },
   {
     "ProductName": "Robot Vacuum",
+    "BrandName": "iRobot",
     "ProductImage": "https://i.postimg.cc/Wbr41Hqf/679135d849ef7fdaae.jpg",
     "Description": "Automatic robot vacuum cleaner for hassle-free cleaning.",
     "Price": 249.99,
@@ -307,6 +341,7 @@
   },
   {
     "ProductName": "Wireless Earbud",
+    "BrandName": "Jabra",
     "ProductImage": "https://i.postimg.cc/rpD3qvKD/air-s-01.webp",
     "Description": "Wireless earbuds with superior sound quality.",
     "Price": 89.99,
@@ -316,6 +351,7 @@
   },
   {
     "ProductName": "Electric Bike",
+    "BrandName": "Trek",
     "ProductImage": "https://i.postimg.cc/J0xPNqsw/64f9d0f0b79db57.webp",
     "Description": "Electric bike for effortless commuting and exercise.",
     "Price": 899.99,
@@ -325,6 +361,7 @@
   },
   {
     "ProductName": "Waterproof Jacket",
+    "BrandName": "Columbia",
     "ProductImage": "https://i.postimg.cc/G3x7ncqM/bl-354531-a.jpg",
     "Description": "Stay dry with this stylish waterproof jacket.",
     "Price": 99.99,
@@ -334,6 +371,7 @@
   },
   {
     "ProductName": "Wireless Mouse",
+    "BrandName": "Logitech",
     "ProductImage": "https://i.postimg.cc/sgvwW5y8/61-Owbbvd-Jq-L.jpg",
     "Description": "Ergonomic wireless mouse with long battery life.",
     "Price": 24.99,
@@ -343,6 +381,7 @@
   },
   {
     "ProductName": "Portable Air Conditioner",
+    "BrandName": "Honeywell",
     "ProductImage": "https://i.postimg.cc/QdwSJVdM/power-portable.webp",
     "Description": "Portable air conditioner with remote control.",
     "Price": 349.99,
@@ -352,6 +391,7 @@
   },
   {
     "ProductName": "Massage Gun",
+    "BrandName": "Theragun",
     "ProductImage": "https://i.postimg.cc/qRdLWYnV/61g-Oc-Gz7ps-L-AC.jpg",
     "Description": "Deep tissue massage gun for muscle relief.",
     "Price": 119.99,
@@ -360,3 +400,101 @@
     "ProductDate": "2024-07-06T14:55:20"
   }
 ]
+
+// <Select
+//   className="lg:w-52"
+//   placeholder="Brand"
+//   defaultValue={selectedOption1}
+//   onChange={setSelectedOption1}
+//   options={options1}
+// />
+// <Select
+//   className=" lg:w-52"
+//   placeholder="Category"
+//   defaultValue={selectedOption2}
+//   onChange={setSelectedOption2}
+//   options={options2}
+// />
+// <Select
+//   className=" lg:w-52"
+//   placeholder="Price"
+//   defaultValue={selectedOption3}
+//   onChange={setSelectedOption3}
+//   options={options3}
+// />
+
+//         const [selectedOption1, setSelectedOption1] = useState(null);
+// const [selectedOption2, setSelectedOption2] = useState(null);
+// const [selectedOption3, setSelectedOption3] = useState(null);
+
+// const options1 = [
+//   { value: 'soundtech', label: 'SoundTech' },
+//   { value: 'techworld', label: 'TechWorld' },
+//   { value: 'fitwear', label: 'FitWear' },
+//   { value: 'compupro', label: 'CompuPro' },
+//   { value: 'homebrew', label: 'HomeBrew' },
+//   { value: 'healthgear', label: 'HealthGear' },
+//   { value: 'visionpro', label: 'VisionPro' },
+//   { value: 'kitchenmaster', label: 'KitchenMaster' },
+//   { value: 'smiletech', label: 'SmileTech' },
+//   { value: 'gamex', label: 'GameX' },
+//   { value: 'yogaflex', label: 'YogaFlex' },
+//   { value: 'timetech', label: 'TimeTech' },
+//   { value: 'soundwave', label: 'SoundWave' },
+//   { value: 'readsmart', label: 'ReadSmart' },
+//   { value: 'boilmaster', label: 'BoilMaster' },
+//   { value: 'ecohome', label: 'EcoHome' },
+//   { value: 'cleanmaster', label: 'CleanMaster' },
+//   { value: 'cookpro', label: 'CookPro' },
+//   { value: 'campsafe', label: 'CampSafe' },
+//   { value: 'airguard', label: 'AirGuard' },
+//   { value: 'canon', label: 'Canon' },
+//   { value: 'george foreman', label: 'George Foreman' },
+//   { value: 'osprey', label: 'Osprey' },
+//   { value: 'anker', label: 'Anker' },
+//   { value: 'philips', label: 'Philips' },
+//   { value: 'sony', label: 'Sony' },
+//   { value: 'ninja', label: 'Ninja' },
+//   { value: 'philipshue', label: 'Philips Hue' },
+//   { value: 'giant', label: 'Giant' },
+//   { value: 'segway', label: 'Segway' },
+//   { value: 'instantpot', label: 'Instant Pot' },
+//   { value: 'august', label: 'August' },
+//   { value: 'belkin', label: 'Belkin' },
+//   { value: 'irobot', label: 'iRobot' },
+//   { value: 'jabra', label: 'Jabra' },
+//   { value: 'trek', label: 'Trek' },
+//   { value: 'columbia', label: 'Columbia' },
+//   { value: 'logitech', label: 'Logitech' },
+//   { value: 'honeywell', label: 'Honeywell' },
+//   { value: 'theragun', label: 'Theragun' },
+// ];
+
+// const options2 = [
+//   { value: 'electronics', label: 'Electronics' },
+//   { value: 'home_appliances', label: 'Home Appliances' },
+//   { value: 'fitness', label: 'Fitness' },
+//   { value: 'computers', label: 'Computers' },
+//   { value: 'kitchen', label: 'Kitchen' },
+//   { value: 'health', label: 'Health' },
+//   { value: 'outdoor', label: 'Outdoor' },
+//   { value: 'gaming', label: 'Gaming' },
+//   { value: 'books', label: 'Books' },
+//   { value: 'automotive', label: 'Automotive' },
+//   { value: 'travel', label: 'Travel' },
+//   { value: 'home_decor', label: 'Home Decor' },
+//   { value: 'personal_care', label: 'Personal Care' },
+//   { value: 'office_supplies', label: 'Office Supplies' },
+//   { value: 'toys', label: 'Toys' },
+//   { value: 'clothing', label: 'Clothing' },
+//   { value: 'sports', label: 'Sports' },
+//   { value: 'music', label: 'Music' },
+//   { value: 'beauty', label: 'Beauty' },
+//   { value: 'pet_supplies', label: 'Pet Supplies' },
+// ];
+
+// const options3 = [
+//   { value: 'chocolate', label: 'Chocolate' },
+//   { value: 'strawberry', label: 'Strawberry' },
+//   { value: 'vanilla', label: 'Vanilla' },
+// ];
