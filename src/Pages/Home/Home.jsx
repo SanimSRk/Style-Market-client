@@ -73,6 +73,21 @@ const Home = () => {
       });
     }
   };
+
+  const handileClickDateNew = e => {
+    if (e.target.value === 'newDate') {
+      axiosPublice.get('/news-firstDate').then(res => {
+        console.log(res.data);
+        setShowsProduct(res.data);
+      });
+    }
+    if (e.target.value === 'oldDate') {
+      axiosPublice.get('/old-dates').then(res => {
+        console.log(res.data);
+        setShowsProduct(res.data);
+      });
+    }
+  };
   //--------------------- pagi nation section ------------------
   useEffect(() => {
     axiosPublice.get('/product-count').then(res => {
@@ -229,13 +244,14 @@ const Home = () => {
         <select
           placeholder="Sorting Date"
           className="border-2 p-2 lg:p-4"
-          onChange={handileClickPriceSort}
+          onChange={handileClickDateNew}
           id="ddlViewBy"
         >
           <option disabled selected>
             Sorting Date
           </option>
-          <option value={'lowest'}> Newest first</option>
+          <option value={'newDate'}> Newest first</option>
+          <option value={'oldDate'}> Newest first</option>
         </select>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-6 lg:grid-cols-3 gap-6">
