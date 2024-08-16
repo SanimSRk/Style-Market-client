@@ -58,6 +58,21 @@ const Home = () => {
   const handileClickPriceSort = e => {
     console.log(e.target.value);
   };
+
+  const handileClickLoewstHigest = e => {
+    if (e.target.value === 'lowest') {
+      axiosPublice.get('/price-lowest').then(res => {
+        console.log(res.data);
+        setShowsProduct(res.data);
+      });
+    }
+    if (e.target.value === 'higest') {
+      axiosPublice.get('/price-higest').then(res => {
+        console.log(res.data);
+        setShowsProduct(res.data);
+      });
+    }
+  };
   //--------------------- pagi nation section ------------------
   useEffect(() => {
     axiosPublice.get('/product-count').then(res => {
@@ -202,14 +217,14 @@ const Home = () => {
         <select
           placeholder="Sorting"
           className="border-2 p-2 lg:p-4"
-          onChange={handileClickPriceSort}
+          onChange={handileClickLoewstHigest}
           id="ddlViewBy"
         >
           <option disabled selected>
             Sorting product
           </option>
           <option value={'lowest'}>Low to High</option>
-          <option value={'lowest'}> High to Low</option>
+          <option value={'higest'}> High to Low</option>
         </select>
         <select
           placeholder="Sorting Date"
