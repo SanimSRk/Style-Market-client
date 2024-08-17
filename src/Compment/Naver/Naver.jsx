@@ -8,8 +8,13 @@ const Naver = () => {
   };
   return (
     <div>
-      <div className="navbar bg-[#2C3E50] text-white">
+      <div className="navbar bg-[#D35400] text-white">
         <div className="flex-1">
+          <img
+            className="w-14 bg-white h-14 rounded-full"
+            src="/FuturePowerMarket-Favicon.png"
+            alt=""
+          />
           <a className="btn btn-ghost text-xl font-bold">StyleMarket</a>
         </div>
         <div className="flex-none gap-4">
