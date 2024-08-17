@@ -2,10 +2,14 @@ import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
 import useAuth from '../../Hooks/useAuth';
 import useAxiosPublice from '../../Hooks/useAxiosPublice';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const Login = () => {
   const { handileClicksignWithGoogle, handileClickLogin } = useAuth();
   const axiosPublice = useAxiosPublice();
+  const navigate = useNavigate();
+  const [error, seterror] = useState('');
   const {
     register,
     handleSubmit,
@@ -16,9 +20,15 @@ const Login = () => {
   const onSubmit = data => {
     console.log(data);
     const { email, password } = data;
-    handileClickLogin(email, password).then(res => {
-      console.log(res.user);
-    });
+    handileClickLogin(email, password)
+      .then(res => {
+        console.log(res.user);
+        navigate('/');
+      })
+      .catch(error => {
+        console.log(error);
+        seterror('your email and password is inviled');
+      });
   };
 
   const handileClickGoogle = () => {
@@ -32,6 +42,7 @@ const Login = () => {
       };
 
       if (res.user) {
+        navigate('/');
         axiosPublice.post('/google-sign', userInfo).then(res => {
           console.log(res.data);
         });
@@ -77,7 +88,7 @@ const Login = () => {
                 {...register('password', { required: true })}
               />
             </div>
-            {/* <p className="text-center text-red-600 font-semibold">{error}</p> */}
+            <p className="text-center text-red-600 font-semibold">{error}</p>
             <div className="flex items-center justify-between mb-4">
               <button
                 className="bg-gradient-to-r btn w-full bg-[#D35400] text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"

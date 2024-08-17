@@ -18,14 +18,6 @@ const Home = () => {
   for (let i = 0; i < numberOfPages; i++) {
     pages.push(i + 1);
   }
-  // const { data } = useQuery({
-  //   queryKey: ['products'],
-  //   queryFn: async () => {
-  //     const { data } = await axiosPublice.get('/product-data');
-  //     setShowsProduct(data);
-  //     return data;
-  //   },
-  // });
 
   const handileClickSearch = e => {
     e.preventDefault();
@@ -181,26 +173,24 @@ const Home = () => {
       <div>
         <Banner></Banner>
       </div>
-      <div className="navbar  bg-[#D35400]  justify-center  mx-auto mt-2">
-        <div className="">
-          <form onSubmit={handileClickSearch}>
-            <div className=" flex items-center">
-              <input
-                className="shadow appearance-none  border-2 rounded-lg w-full  md:w-[300px] lg:w-[380px]  input input-bordered text-gray-700 leading-tight focus:outline-none rounded-r-none"
-                id="search"
-                type="search"
-                name="search"
-                placeholder="Search your products......"
-              />
-              <button
-                type="submit"
-                className="btn  bg-[#2C3E50] text-whitess text-white font-semibold rounded-l-none"
-              >
-                Search
-              </button>
-            </div>
-          </form>
-        </div>
+      <div className="grid justify-center my-6">
+        <form onSubmit={handileClickSearch}>
+          <div className=" flex items-center">
+            <input
+              className="shadow appearance-none  border-2 rounded-lg w-full  md:w-[300px] lg:w-[380px]  input input-bordered text-gray-700 leading-tight focus:outline-none rounded-r-none"
+              id="search"
+              type="search"
+              name="search"
+              placeholder="Search your products......"
+            />
+            <button
+              type="submit"
+              className="btn  bg-[#D35400] text-whitess text-white font-semibold rounded-l-none"
+            >
+              Search
+            </button>
+          </div>
+        </form>
       </div>
       <div className="gap-3 lg:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:justify-around  justify-between mx-auto my-6">
         <select
@@ -297,7 +287,7 @@ const Home = () => {
           id="ddlViewBy"
         >
           <option disabled selected>
-            Sorting product
+            Sorting Price
           </option>
           <option value={'lowest'}>Low to High</option>
           <option value={'higest'}> High to Low</option>
@@ -308,11 +298,11 @@ const Home = () => {
           onChange={handileClickDateNew}
           id="ddlViewBy"
         >
-          <option disabled selected>
+          <option disabled selected className="font-bold">
             Sorting Date
           </option>
-          <option value={'newDate'}> Newest first</option>
-          <option value={'oldDate'}> Newest first</option>
+          <option value={'newDate'}> New added product</option>
+          <option value={'oldDate'}>old added product</option>
         </select>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-6 lg:grid-cols-3 gap-6">

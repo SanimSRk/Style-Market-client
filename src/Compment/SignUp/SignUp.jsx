@@ -3,9 +3,13 @@ import { useForm } from 'react-hook-form';
 import useAuth from '../../Hooks/useAuth';
 import { FcGoogle } from 'react-icons/fc';
 import useAxiosPublice from '../../Hooks/useAxiosPublice';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 const SignUp = () => {
   const axiosPublice = useAxiosPublice();
+  const navigate = useNavigate();
+  const [error, seterror] = useState('');
   const {
     handileClickSignUp,
     handileClickUpdateProfile,
@@ -41,18 +45,19 @@ const SignUp = () => {
         };
         handileClickSignUp(email, password)
           .then(res => {
-            console.log(res.user);
+            console.log(res?.user);
             if (res.user) {
               handileClickUpdateProfile(fullName, image).then(res => {
-                console.log(res.user);
                 axiosPublice.post('sign-user', userInfo).then(res => {
                   console.log(res.data);
+                  navigate('/');
                 });
               });
             }
           })
           .catch(error => {
             console.log(error);
+            seterror(error.message);
           });
       });
   };
@@ -66,6 +71,7 @@ const SignUp = () => {
         role: 'user',
       };
       if (res.user) {
+        navigate('/');
         axiosPublice.post('/google-sign', userInfo).then(res => {
           console.log(res.data);
         });
@@ -142,7 +148,7 @@ const SignUp = () => {
                 {...register('password', { required: true })}
               />
             </div>
-            {/* <p className="text-center text-red-600 font-semibold">{error}</p> */}
+            <p className="text-center text-red-600 font-semibold">{error}</p>
             <div className="flex items-center justify-between mb-4">
               <button
                 className="bg-gradient-to-r btn w-full bg-[#D35400] text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
