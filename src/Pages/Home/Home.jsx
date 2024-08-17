@@ -57,6 +57,61 @@ const Home = () => {
 
   const handileClickPriceSort = e => {
     console.log(e.target.value);
+    if (e.target.value === '100') {
+      axiosPublice.get(`/product-priceSort?main=${5}&&max=${100}`).then(res => {
+        console.log(res.data);
+        setShowsProduct(res?.data);
+      });
+    } else if (e.target.value === '200') {
+      axiosPublice
+        .get(`/product-priceSort?main=${100}&&max=${200}`)
+        .then(res => {
+          console.log(res.data);
+          setShowsProduct(res?.data);
+        });
+    } else if (e.target.value === '300') {
+      axiosPublice
+        .get(`/product-priceSort?main=${200}&&max=${300}`)
+        .then(res => {
+          console.log(res.data);
+          setShowsProduct(res?.data);
+        });
+    } else if (e.target.value === '400') {
+      axiosPublice
+        .get(`/product-priceSort?main=${300}&&max=${400}`)
+        .then(res => {
+          console.log(res.data);
+          setShowsProduct(res?.data);
+        });
+    } else if (e.target.value === '500') {
+      axiosPublice
+        .get(`/product-priceSort?main=${400}&&max=${500}`)
+        .then(res => {
+          console.log(res.data);
+          setShowsProduct(res?.data);
+        });
+    } else if (e.target.value === '700') {
+      axiosPublice
+        .get(`/product-priceSort?main=${500}&&max=${700}`)
+        .then(res => {
+          console.log(res.data);
+          setShowsProduct(res?.data);
+        });
+    } else if (e.target.value === '900') {
+      axiosPublice
+        .get(`/product-priceSort?main=${700}&&max=${900}`)
+        .then(res => {
+          console.log(res.data);
+          setShowsProduct(res?.data);
+        });
+    } else if (e.target.value === '1400') {
+      axiosPublice
+        .get(`/product-priceSort?main=${900}&&max=${1400}`)
+        .then(res => {
+          console.log(res.data);
+          setShowsProduct(res?.data);
+        });
+    }
   };
 
   const handileClickLoewstHigest = e => {
@@ -88,6 +143,7 @@ const Home = () => {
       });
     }
   };
+
   //--------------------- pagi nation section ------------------
   useEffect(() => {
     axiosPublice.get('/product-count').then(res => {
@@ -146,7 +202,7 @@ const Home = () => {
           </form>
         </div>
       </div>
-      <div className="gap-3 lg:gap-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:justify-around  justify-between mx-auto my-6">
+      <div className="gap-3 lg:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:justify-around  justify-between mx-auto my-6">
         <select
           placeholder="Brand"
           className="border-2 p-2 lg:p-4"
@@ -223,11 +279,16 @@ const Home = () => {
           id="ddlViewBy"
         >
           <option disabled selected>
-            Brand
+            Price Range
           </option>
-          <option aria-valuemin="5" aria-valuemax="100">
-            $5 - $100
-          </option>
+          <option value={'100'}>$5 - $100</option>
+          <option value={'200'}>$100 - $200</option>
+          <option value={'300'}>$200 - $300</option>
+          <option value={'400'}>$300 - $400</option>
+          <option value={'500'}>$400 - $500</option>
+          <option value={'700'}>$500 - $700</option>
+          <option value={'900'}>$700- $900</option>
+          <option value={'1400'}>$900- $1400</option>
         </select>
         <select
           placeholder="Sorting"
